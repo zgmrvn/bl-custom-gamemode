@@ -19,7 +19,9 @@ namespace Clans
             OpenMission(scene); // Doesn't work, mission doesn't start, even though it contains exactly the same code as the method above
         }
 
-        public void OpenMission(string scene)
+        // This method contains literally the code executed by the Battle game mode, I copied it from
+        // MultiplayerMissions.OpenBattleMission(scene)
+        private void OpenMission(string scene)
         {
             MissionState.OpenNew(
                 "MultiplayerBattle",
