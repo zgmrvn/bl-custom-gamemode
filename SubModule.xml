@@ -1,0 +1,29 @@
+<Module>
+	<Name value="Clans"/>
+	<Id value="Clans"/>
+	<Version value="v1.0.0"/>
+	<ModuleCategory value="Multiplayer"/>
+	<DependedModules>
+		<DependedModule Id="Native"/>
+		<DependedModule Id="Multiplayer"/>
+	</DependedModules>
+	<SubModules>
+		<SubModule>
+			<Name value="Clans"/>
+			<DLLName value="Clans.dll"/>
+			<SubModuleClassType value="Clans.ClansSubModule"/>
+			<Tags>
+				<Tag key="DedicatedServerType" value="custom" />
+				<Tag key="PlayerHostedDedicatedServer" value="true" />
+			</Tags>
+		</SubModule>
+	</SubModules>
+	<Xmls>
+		<!-- <XmlNode>
+			<XmlName id="MultiplayerScenes" path="multiplayer_scenes" />
+			<IncludedGameTypes>
+				<GameType value="MultiplayerGame" />
+			</IncludedGameTypes>
+		</XmlNode> -->
+	</Xmls>
+</Module>
